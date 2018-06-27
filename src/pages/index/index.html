@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="full-screen" content="yes"><!--全屏-->
+    <meta name="browsermode" content="application"><!--微信 全屏-->
+    <meta name="x5-orientation" content="portrait"><!--qq uc 全屏-->
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta name="robots" content="all">
+    <title>小鸡牧场</title>
+    <script type="text/javascript" src="static/flexible.js"></script>
+    <link rel="stylesheet" href="static/css/base.css?v=10010" />
+    <link rel="stylesheet" href="static/css/wu-ui.css?v=1010" media="none" onload="if(media!='all')media='all'"/>
+    <link rel="stylesheet" href="static/css/swiper.css" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="static/css/vue-animate.min.css" media="none" onload="if(media!='all')media='all'">
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>  
+    <style>
+      img{
+        pointer-events: none;
+      }
+    /*小鸡对话框*/
+.chick-talk{  
+    width: 2.27rem;
+    height: 0.54rem;
+    position: fixed;   
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%); 
+    background: url(static/images/chicken_house_dialogue_bg_img.png) no-repeat center;
+    background-size: 100% 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    z-index: 30;
+    /* opacity: 0; */
+    animation: chickTalk 0.5s linear 0s 1 both;
+}
+.chick-talk .chick-img{
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    left: -0.07rem;
+    bottom: 0.06rem;
+}
+.chick-talk .talk-content{
+    width: 96%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    font-size: 0.13rem;
+    color: #AA694E;
+    line-height: 0.17rem;
+    text-align: left;
+    padding-left: 0.53rem;
+    padding-right: 5px;
+    display: -webkit-box;
+    -webkit-box-align: center;   
+}
+@-webkit-keyframes chickTalk{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@media screen  and (max-height:540px){
+  .chick-talk{
+    top:12vh;
+  }
+}
+
+</style>
+  </head>
+  <body >
+    <div id="app"></div>
+    <script type="text/javascript" src="static/utils/wu-ui.js?v=1010000"></script>
+    <script async type="text/javascript" src="static/showMessage.js" media="none" onload="if(media!='all')media='all'"></script>
+  </body>
+</html>

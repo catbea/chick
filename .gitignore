@@ -1,0 +1,11 @@
+node_modules/
+build/ 
+.project
+
+# IntelliJ IDEA #
+*.iml
+.idea
+
+update
+
+package-lock.json
